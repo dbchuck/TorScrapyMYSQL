@@ -7,7 +7,6 @@ fi
 
 apt-get update
 apt-get install gcc mariadb-server python3 python3-pip privoxy tor python3-mysql.connector -y
-# (recommended) Optionally you can use the PHPMyAdmin interface to view your MYSQL data via web interface
 apt-get install phpmyadmin -y
 pip3 install scrapy
 pip3 install bs4

@@ -20,5 +20,9 @@ To see what it does:
   ```
 Or one session by:
 ```
-scrapy crawl UAtester
+scrapy crawl TorScrapyMYSQL
 ```
+
+### View results
+
+On the same computer, go to http://localhost/phpmyadmin in a browser, login and look at the TorScrapyMYSQL database.

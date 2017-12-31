@@ -11,7 +11,7 @@ Tested with setup with Debian 9.3 64-bit VM, Python 3.x, and Scrapy installed wi
   ```
 
 ##### 2. Edit how many concurrent sessions:
-Edit in ```MAX_INSTANCES``` TorScrapyMYSQL/start_scrapy_instances.sh
+Edit in the ```MAX_INSTANCES``` variable in TorScrapyMYSQL/start_scrapy_instances.sh
 
 ### Usage
 To see what it does:

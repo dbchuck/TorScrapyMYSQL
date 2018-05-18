@@ -1,7 +1,7 @@
-# TorScrapyMYSQL
+# TorScrapyMYSQL (TSM)
 Basic setup of using Scrapy with Tor and storing results in MYSQL database [Python Scrapy Framework](http://scrapy.org/).
 
-Tested with setup with Debian 9.3 64-bit VM, Python 3.x, and Scrapy installed with pip3.
+Tested with setup with Debian 9.4 64-bit VM, Python 3.x, and Scrapy installed with pip3.
 
 ### Setup
 ##### 1. Execute install script
@@ -9,20 +9,16 @@ Tested with setup with Debian 9.3 64-bit VM, Python 3.x, and Scrapy installed wi
   ```
   bash setup.sh
   ```
-
-##### 2. Edit how many concurrent sessions:
-Edit in the ```MAX_INSTANCES``` variable in TorScrapyMYSQL/start_scrapy_instances.sh
+  If you install everything the setup script asks for, you can start crawling Tor webpages immediately.
 
 ### Usage
-To see what it does:
-  ```
-  bash start_scrapy_instances.sh
-  ```
-Or one session by:
+
+Start crawling by typing:
 ```
-scrapy crawl TorScrapyMYSQL
+scrapy crawl tsm
 ```
 
 ### View results
 
-On the same computer, go to http://localhost/phpmyadmin in a browser, login and look at the TorScrapyMYSQL database.
+On the same computer, go to http://localhost/phpmyadmin in a browser, login and look at the tsm database.
+The table *main* will contain information about the webpages scraped, but will not save the webpages by default. Light modification to the TSM/spiders/tsm.py file can allow you to save the webpage.
